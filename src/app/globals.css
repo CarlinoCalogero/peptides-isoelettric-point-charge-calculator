@@ -1,0 +1,31 @@
+h2 {
+    margin: 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+legend {
+    margin: 0 auto;
+}
+
+span {
+    text-align: center;
+}
+
+#chargeRadioButton {
+    margin-left: 0;
+}
+
+footer {
+    background-color: rgb(247, 247, 247);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
