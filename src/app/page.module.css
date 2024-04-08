@@ -25,6 +25,32 @@
   margin-bottom: 4rem;
 }
 
+.inputOuterDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box {
+  background: #d3d3d32b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.inputValuesDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 20rem;
+}
+
+.chargeOrPhInputRadioDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
 .chargeOrPhInputDiv {
   display: flex;
   flex-direction: row;
@@ -35,73 +61,11 @@
   flex: 2;
 }
 
-.inputOuterDiv {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.chargeOrPhInputRadioDiv {
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.inputValuesDiv {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 20rem;
-}
-
-.box {
-  background: #d3d3d32b;
-  padding: 1.5rem;
-  border-radius: 1rem;
-}
-
-.maxChargeChargeAndPhDiv {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.pkaInputDiv {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
 .pkaInputOuterDiv {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 1rem;
-}
-
-.labelInputDiv {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-.labelInputDiv>* {
-  width: 50%;
-}
-
-.chargeDiv,
-.phDiv {
-  width: 50%;
-}
-
-.phDiv>label {
-  width: fit-content;
-}
-
-.phDiv>input {
-  width: auto;
 }
 
 .pkaInputOuterDiv>button {
@@ -124,13 +88,7 @@
   width: 4rem;
 }
 
-.chargeAndPhDiv {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.graph1And2Div {
-  display: flex;
-  flex-direction: row;
+/* Responsive layout */
+@media (max-width: 800px) {
+  
 }
