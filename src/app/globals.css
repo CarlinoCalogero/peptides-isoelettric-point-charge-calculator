@@ -1,7 +1,3 @@
-h2 {
-    margin: 0;
-}
-
 fieldset {
     display: flex;
     flex-direction: column;
@@ -12,6 +8,7 @@ legend {
     margin: 0 auto;
 }
 
+h1,
 span {
     text-align: center;
 }

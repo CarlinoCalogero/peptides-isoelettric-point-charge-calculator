@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 30rem;
-  text-align: center;
+  padding: 1rem;
 }
 
 .titleAndDescriptionDivFullSize {
@@ -90,5 +90,26 @@
 
 /* Responsive layout */
 @media (max-width: 800px) {
-  
+
+  .pageDiv{
+    gap: 1rem;
+  }
+
+  .outerDiv {
+    gap: 2rem;
+  }
+
+  .pkaInputOuterDiv{
+    align-items: center;
+  }
+
+  .outerDiv,
+  .pkaInputPairDiv {
+    flex-direction: column;
+  }
+
+  .pkaInputListDiv>input {
+    width: 8rem;
+  }
+
 }
