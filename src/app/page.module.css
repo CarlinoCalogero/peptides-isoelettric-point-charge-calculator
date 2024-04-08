@@ -3,7 +3,18 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+}
+
+.titleAndDescriptionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
   text-align: center;
+}
+
+.titleAndDescriptionDivFullSize {
+  max-width: none;
 }
 
 .outerDiv {

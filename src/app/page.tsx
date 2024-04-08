@@ -149,7 +149,10 @@ export default function Home() {
   return (
     <div className={styles.pageDiv}>
 
-      <h1>Calcolatore di punto isolettrico e carica dei peptidi</h1>
+      <div className={`${styles.titleAndDescriptionDiv} ${isCompute ? styles.titleAndDescriptionDivFullSize : null}`}>
+        <h1>Calcolatore di punto isolettrico e carica dei peptidi</h1>
+        <span>Determinazione del punto isoelettrico e della carica di peptidi a parte da pH 0 fino a 14</span>
+      </div>
 
       <div className={styles.outerDiv}>
 
