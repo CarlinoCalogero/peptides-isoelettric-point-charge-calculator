@@ -149,7 +149,7 @@ export default function Home() {
   return (
     <div className={styles.pageDiv}>
 
-      <h1>Sono un prosciutto senza senso</h1>
+      <h1>Calcolatore di punto isolettrico e carica dei peptidi</h1>
 
       <div className={styles.outerDiv}>
 
@@ -237,7 +237,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <span>&copy; Made with love while Sara was crying</span>
+        <span>Realizzato da <a href='https://github.com/CarlinoCalogero'>CarlinoCalogero</a> e Alessio Barone</span>
       </footer>
 
     </div>
