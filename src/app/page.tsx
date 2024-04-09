@@ -10,8 +10,8 @@ export default function Home() {
   const CHARGE_RADIO_BUTTON_VALUE: string = 'charge'
   const PH_RADIO_BUTTON_VALUE: string = 'ph'
 
-  const [pkaInputList, setPkaInputList] = useState<number[]>([2.15, 3.71, 6.04, 9.58, 10.67])
-  const [maxCharge, setMaxCharge] = useState<number | ''>(3)
+  const [pkaInputList, setPkaInputList] = useState<number[]>([0, 0])
+  const [maxCharge, setMaxCharge] = useState<number | ''>('')
   const [chargeOrPhValue, setChargeOrPhValue] = useState<number | ''>('')
   const [isCompute, setIsCompute] = useState<boolean>(false)
 
@@ -25,8 +25,6 @@ export default function Home() {
 
   useEffect(() => {
     if (isCompute) {
-
-
 
       functionPlot({
         target: "#graph1",
@@ -205,7 +203,7 @@ export default function Home() {
                         <div className={styles.pkaInputListDiv}>
                           <span>{i + 1}</span>
                           <input type="number" step="0.01" onChange={(e) => { onArrayValueChanged(e, i) }} value={pkaInput}></input>
-                          <button onClick={() => { removePkaInputElement(i) }}>-</button>
+                          <button onClick={() => { removePkaInputElement(i) }} disabled={pkaInputList.length == 2}>-</button>
                         </div>
 
                         {
@@ -213,7 +211,7 @@ export default function Home() {
                           <div className={styles.pkaInputListDiv}>
                             <span>{i + 2}</span>
                             <input type="number" step="0.01" onChange={(e) => { onArrayValueChanged(e, i + 1) }} value={pkaInputList[i + 1]}></input>
-                            <button onClick={() => { removePkaInputElement(i + 1) }}>-</button>
+                            <button onClick={() => { removePkaInputElement(i + 1) }} disabled={pkaInputList.length == 2}>-</button>
                           </div>
                         }
                       </div>
