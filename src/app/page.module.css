@@ -57,7 +57,7 @@
   gap: 0.5rem;
 }
 
-.chargeOrPhInputDiv>input {
+.chargeOrPhInputDiv>input[type=number] {
   flex: 2;
 }
 
@@ -84,7 +84,7 @@
   gap: 0.5rem;
 }
 
-.pkaInputListDiv>input {
+.pkaInputListDiv>input[type=number] {
   width: 4rem;
 }
 
@@ -108,7 +108,7 @@
     flex-direction: column;
   }
 
-  .pkaInputListDiv>input {
+  .pkaInputListDiv>input[type=number] {
     width: 8rem;
   }
 

@@ -9,14 +9,12 @@ let pointsFromCharge: [number, number][] = []
 let pointsGraphPkVsQFromPh: [number, number][] = []
 let pointsGraphPkVsQFromCharge: [number, number][] = []
 
-export function deepCopy(array: any[]): any[] {
-    return [...array]
-}
-
 export function compute(pkaInputList: number[], maxCharge: number, isComputePh: boolean,
     chargeOrPh: number): number {
 
-    const pkaList = deepCopy(pkaInputList);
+    console.log(typeof maxCharge)
+
+    const pkaList = [...pkaInputList];
 
     const minCharge = maxCharge - pkaList.length;
 
@@ -25,6 +23,14 @@ export function compute(pkaInputList: number[], maxCharge: number, isComputePh: 
 
     const y1 = -0.5 + maxCharge;
     const y2 = -0.5 * (pkaList.length) + (minCharge + 0.5 * (pkaList.length + 1));
+
+    console.log("list:", pkaList,
+        "\nmaxCharge:", maxCharge,
+        "\nminCharge:", minCharge,
+        "\nx1:", x1,
+        "\nx2:", x2,
+        "\ny1:", y1,
+        "\ny2:", y2)
 
     //---- graph logic ----//
     firstFunctionAsString = `-0.5x + ${maxCharge}`
@@ -42,6 +48,8 @@ export function compute(pkaInputList: number[], maxCharge: number, isComputePh: 
 function computePh(pkaInputList: number[], y: number, x1: number, x2: number, y1: number, y2: number, maxCharge: number, minCharge: number): number {
 
     const x = (((y - y1) / (y2 - y1)) * (x2 - x1)) + x1;
+
+    console.log("x: ", x)
 
     //---- graph logic ----//
     thirdFunctionWithPhAsString = `((${y2}-${y1})(x-${x1})+${y1}((${x2}-${x1})))/(${x2}-${x1})`
