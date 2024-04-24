@@ -145,7 +145,7 @@ export default function Home() {
 
       <div className={`${styles.titleAndDescriptionDiv} ${isCompute ? styles.titleAndDescriptionDivFullSize : null}`}>
         <h1>Calcolatore di punto isolettrico e carica dei peptidi</h1>
-        <span>Determinazione del punto isoelettrico e della carica di peptidi a parte da pH 0 fino a 14</span>
+        <span>Determinazione del punto isoelettrico e della carica di peptidi a partire da pH 0 fino a 14</span>
       </div>
 
       {
@@ -223,7 +223,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <p>D'Andrea G. And Di Nicolantonio G. ,a graphical approach to Determine the Isoeletric Point and Charge of small peptides from pH 0 to 14. Journal of chemical Education , <b>79</b>(8), 972-975,2002.</p>
+        <p>D'Andrea G. and Di Nicolantonio G. : "A graphical approach to determine the isoeletric point and charge of small peptides from pH 0 to 14". Journal of Chemical Education, <b>79</b>(8), 972-975, 2002.</p>
         <span>Realizzato da <a href='https://github.com/CarlinoCalogero'>CarlinoCalogero</a> e Alessio Barone</span>
       </footer>
 
